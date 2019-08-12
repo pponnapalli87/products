@@ -3,7 +3,7 @@ import { camelizeKeys } from 'humps'
 
 import { GET_PRODUCTS, GET_PRODUCTS_SUCCEEDED, GET_PRODUCTS_FAILED } from '../actions/products'
 
-function fetchApi(url) {
+export function fetchApi(url) {
   return fetch(url)
     .then(response => response.json())
 }
